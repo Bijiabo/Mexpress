@@ -1,0 +1,12 @@
+doctype html
+//Created by boooo on 14-3-12.
+html
+    include public/header
+    script(type='text/javascript',src='static/af.js')
+    script(type='text/javascript',src='static/socket.io.js')
+    script(type='text/javascript',src='static/Chart.js')
+    script(type='text/javascript',src='static/main_mobi.js')
+    body
+        h1 #{data.title}
+        p#AQI loading AQI...
+        canvas#myChart(width="1200",height="500")
